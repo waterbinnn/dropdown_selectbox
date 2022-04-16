@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Dropdown selectbox</title>
+</head>
+<!-- 디자인을 위해 ul li 로,,? -->
+<body>
+  <section class="select-wrapper" data-role="selectbox">
+    <h2 class="hidden">select</h2>
+    <!-- option-btn 버튼 누르면 option ul 나오게끔  -->
+   <section class="selectbox">
+     <h2 class="hidden">selectbox</h2>
+    <button type="button" class="toggle-btn">
+      최애 프로그래밍 언어
+      <img src="./img/icon-Triangle-down.svg" alt="" class="ico-down">
+    </button>
+   <ul class="selectbox-option hide">
+     <li><button type="button" class="option-btn">Python</button></li>
+     <li><button type="button" class="option-btn">Java</button></li>
+     <li><button type="button" class="option-btn">JavaScript</button></li>
+     <li><button type="button" class="option-btn">C#</button></li>
+     <li><button type="button" class="option-btn">C/C++</button></li>
+   </ul>
+   </section>
+
+<!-- 자바스크립트로 버튼토글 구현하기 -->
+<!-- 누르면 ico-up 버튼이 되게 , hide 되어있는 옵션들이 나오게끔 -->
+
+</body>
+</html>
