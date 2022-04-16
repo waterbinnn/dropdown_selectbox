@@ -28,13 +28,22 @@ body{
 
 .selectbox .toggle-btn {
   width: 200px;
+  text-align: left;
   background: #FFFFFF;
   border: 1px solid #C4C4C4;
   box-sizing: border-box;
   border-radius: 10px;
-  padding: 13px;
+  padding: 13px 14px;
   margin-bottom: 9px;
+  background: url(/img/icon-Triangle-down.svg) no-repeat;
+  background-position: 175px 50%;
 }
+
+.selectbox .toggle-btn.on {
+  background: url(/img/icon-Triangle-up.svg) no-repeat;
+  background-position: 175px 50%;
+}
+
 
 .selectbox .toggle-btn:hover,
 .selectbox .toggle-btn:focus,
@@ -42,12 +51,6 @@ body{
   outline: 3px solid #F8E4FF;
   border: 1px solid #9B51E0;
 }
-
-
-.ico-down {
-  margin-left: 38px;
-}
-
 
 .selectbox-option {
   box-sizing: border-box;
@@ -57,6 +60,14 @@ body{
   box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   padding: 4px 8px;
+}
+
+.selectbox-option {
+display: none;
+}
+
+.selectbox-option.on {
+display: block;
 }
 
 .selectbox-option li {
