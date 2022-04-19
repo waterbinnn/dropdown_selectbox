@@ -33,12 +33,12 @@ body{
   border-radius: 10px;
   padding: 13px 14px;
   margin-bottom: 9px;
-  background: url(/icon-Triangle-down.svg) no-repeat;
+  background: url(../image/icon-Triangle-down.svg) no-repeat;
   background-position: 175px 50%;
 }
 
 .selectbox .toggle-btn.on {
-  background: url(/icon-Triangle-up.svg) no-repeat;
+  background: url(../image/icon-Triangle-up.svg) no-repeat;
   background-position: 175px 50%;
 }
 
