@@ -15,6 +15,7 @@ button {
 
 body{
   font-family: Roboto, sans-serif;
+  font-size: 14px;
 }
 
 .select-wrapper {
@@ -22,11 +23,8 @@ body{
   margin: 100px auto;
 }
 
-.selectbox {
-  font-size: 14px;
-}
-
 .selectbox .toggle-btn {
+  font-size: 12px;
   width: 200px;
   text-align: left;
   background: #FFFFFF;
@@ -42,15 +40,16 @@ body{
 .selectbox .toggle-btn.on {
   background: url(/img/icon-Triangle-up.svg) no-repeat;
   background-position: 175px 50%;
-
 }
-
 
 .selectbox .toggle-btn:hover,
 .selectbox .toggle-btn:focus,
 .selectbox .toggle-btn:active {
   outline: 3px solid #F8E4FF;
   border: 1px solid #9B51E0;
+  font-size: 14px;
+  padding: 12px 14px;
+
 }
 
 .selectbox-option {

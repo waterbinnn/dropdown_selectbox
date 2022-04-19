@@ -9,7 +9,7 @@ btn.addEventListener('click',() => {
 });
 
 list.addEventListener('click',(event)=>{
-  (event.target.nodeName === "BUTTON"); {
+  (event.target.type === "BUTTON"); {
     btn.innerText = event.target.innerText;
     list.classList.remove('on');
 }
