@@ -33,12 +33,12 @@ body{
   border-radius: 10px;
   padding: 13px 14px;
   margin-bottom: 9px;
-  background: url(/img/icon-Triangle-down.svg) no-repeat;
+  background-image: url(/img/icon-Triangle-down.svg) no-repeat;
   background-position: 175px 50%;
 }
 
 .selectbox .toggle-btn.on {
-  background: url(/img/icon-Triangle-up.svg) no-repeat;
+  background-image: url(/img/icon-Triangle-up.svg) no-repeat;
   background-position: 175px 50%;
 }
 
@@ -82,8 +82,6 @@ display: block;
 .selectbox-option li:last-child{
   margin-bottom: 5px;
 }
-
-
 
 .selectbox-option .option-btn {
   width: inherit;
