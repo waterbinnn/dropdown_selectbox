@@ -1,50 +1,60 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Dropdown selectbox</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Dropdown selectbox</title>
 </head>
 
 <body>
   <section class="select-wrapper" data-role="selectbox">
     <h2 class="hidden">select</h2>
 
-   <section class="selectbox">
-     <h2 class="hidden">selectbox</h2>
-    <button type="button" class="toggle-btn">
-      최애 프로그래밍 언어
-    </button>
+    <section class="selectbox">
+      <h2 class="hidden">selectbox</h2>
+      <button type="button" class="toggle-btn">
+        최애 프로그래밍 언어
+      </button>
 
-   <ul class="selectbox-option">
-     <li><button type="button" class="option-btn">Python</button></li>
-     <li><button type="button" class="option-btn">Java</button></li>
-     <li><button type="button" class="option-btn">JavaScript</button></li>
-     <li><button type="button" class="option-btn">C#</button></li>
-     <li><button type="button" class="option-btn">C/C++</button></li>
-   </ul>
-   </section>
+      <ul class="selectbox-option">
+        <li><button type="button" class="option-btn">Python</button></li>
+        <li><button type="button" class="option-btn">Java</button></li>
+        <li><button type="button" class="option-btn">JavaScript</button></li>
+        <li><button type="button" class="option-btn">C#</button></li>
+        <li><button type="button" class="option-btn">C/C++</button></li>
+      </ul>
+    </section>
 
-<script>
+    <script>
 
-const btn = document.querySelector(".toggle-btn");
-const list = document.querySelector(".selectbox-option");
+      const btn = document.querySelector(".toggle-btn");
+      const list = document.querySelector(".selectbox-option");
 
-btn.addEventListener('click',() => {
-  list.classList.toggle('on');
-  btn.classList.toggle('on');
-});
+      // 버튼을 누르면 화살표 방향이 바뀌어야 한다. 
+      // 셀렉트 박스 옵션이 담긴 ul 이 나와야한다. 
+      // 클릭했을 때 그 클릭된 요소가 박스에 보여야 한다. 
 
-list.addEventListener('click',(event)=>{
- if (event.target.nodeName === "BUTTON") {
-    btn.innerText = event.target.innerText;
-    list.classList.remove('on');
-}
-});
-</script>
+      btn.addEventListener('click', () => {
+        list.classList.toggle('on');
+        btn.classList.toggle('on');
+
+      })
+
+      list.addEventListener('click', (e) => {
+        if (e.target.nodeName === 'BUTTON') {
+          btn.innerHTML = e.target.innerHTML;
+          list.classList.remove('on');
+          btn.classList.remove('on');
+
+        }
+      });
+
+    </script>
 
 </body>
+
 </html>

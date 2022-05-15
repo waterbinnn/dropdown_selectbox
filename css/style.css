@@ -13,7 +13,7 @@ button {
   padding: 0;
 }
 
-body{
+body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
 }
@@ -47,9 +47,6 @@ body{
 .selectbox .toggle-btn:active {
   outline: 3px solid #F8E4FF;
   border: 1px solid #9B51E0;
-  font-size: 14px;
-  padding: 12px 14px;
-
 }
 
 .selectbox-option {
@@ -63,11 +60,11 @@ body{
 }
 
 .selectbox-option {
-display: none;
+  display: none;
 }
 
 .selectbox-option.on {
-display: block;
+  display: block;
 }
 
 .selectbox-option li {
@@ -76,10 +73,11 @@ display: block;
   margin-top: 10px;
 }
 
-.selectbox-option li:first-child{
-  margin-top:3px;
+.selectbox-option li:first-child {
+  margin-top: 3px;
 }
-.selectbox-option li:last-child{
+
+.selectbox-option li:last-child {
   margin-bottom: 5px;
 }
 
@@ -87,7 +85,7 @@ display: block;
   width: inherit;
   box-sizing: border-box;
   border: none;
-  background-color:transparent;
+  background-color: transparent;
   padding: 7px 10px;
   text-align: left;
   line-height: 16px;
